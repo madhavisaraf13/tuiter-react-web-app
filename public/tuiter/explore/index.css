@@ -1,0 +1,256 @@
+input[type="search"] {
+    border: none;
+    background: lightgray;
+    font-size: 14px;
+    color: darkgray;
+    border: 1px solid transparent;
+    border-radius: 60px;
+    width : 100%;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+
+  .wd-tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 10px ;
+    padding-top:0px;
+    margin-bottom: 20px;
+  }
+
+  .wd-tab {
+    margin-right: 100px;
+    position: relative;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 550;
+    margin-bottom:5px;
+
+  }
+
+  .wd-search-container {
+    background-color: lightgray;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    height:35px;
+  }
+
+  .wd-search-input {
+    background-color: lightgray;
+    padding: 5px 5px;
+    font-size: 15px;
+    color: darkgray;
+    margin-right: 0px;
+    outline: none;
+    width : 95%;
+    height:40px;
+    border:none;
+  }
+
+  .wd-tab.wd-selected-tab a {
+    margin:10px;
+    border-bottom: 8px solid #007bff;
+    border-spacing: 30px;
+    padding-bottom: 5px; 
+    margin-bottom: -2px;
+    border-radius:7px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  a:unvisited {
+    color: black;
+    }
+
+  a:visited {
+  color: black;
+  text-decoration: none;
+  }
+
+  a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+.wd-image-container {
+  position: relative;
+}
+
+.wd-bs-image {
+  width: 100%;
+  height : 250px;
+}
+
+.wd-image {
+  width: 100%;
+  height : 600px;
+}
+
+.wd-image-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+  font-family: Arial;
+  font-weight: 600;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+
+}
+.list-group-item {
+  font-size:10px;
+}
+
+.nav-item{
+  font-size: 10px;
+  color:#007bff;
+}
+
+/* Tuits list styles */
+.wd-tuits {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid lightgray;
+  box-shadow: 5px 10px white;
+}
+
+.wd-tuit-item {
+  padding: 10px;
+}
+
+.wd-name{
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.wd-gear-icon{
+ margin-right:10px;
+ margin-bottom:10px;
+ margin-top:10px;
+}
+
+.wd-trending-tweets {
+  font-size:15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color:dimgrey;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+}
+
+.wd-tuit-btn {
+  min-width: 50px;
+  max-width: 50px;
+} 
+
+.wd-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  text-align: left;
+  grid-column: 1 / span 11;
+}
+
+.wd-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  text-align: right;
+  grid-column: 12/ span 1;
+}
+
+.wd-trending-tuits-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  text-align: left;
+  grid-column: 1 / span 10;
+}
+
+.wd-trending-tuits-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  text-align: right;
+  grid-column: 11/ span 1;
+}
+
+.wd-bs-item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  text-align: left;
+  grid-column: 1 / span 11;
+}
+
+.wd-bs-item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  text-align: right;
+  grid-column: 12/ span 1;
+}
+
+.wd-bs-tuit-button{
+  padding:5px;
+}
+
+.wd-bs-small-padding{
+  padding:5px;
+}
+
+/* .fontuser{
+  position: relative;
+} */
+
+.wd-bs-med-padding{
+  padding-right:10px;
+  padding-left:20px;
+
+}
+
+.wd-bs-s-padding{
+  padding-right:10px;
+  padding-left:10px;
+}
+
+
+.wd-bs-logo{
+  height: 48px;
+  width: 48px;
+}
+
+.wd-bs-sm-logo{
+  height: 30px;
+  width: 30px;
+}
+
+.wd-bs-logo-col-width{
+  width:25%;
+}
+
+.wd-bs-text-col-width{
+  width:50%;
+}
+
+.wd-bs-follow-col-width{
+  width:25%;
+}
+
+.wd-custom-font1{
+  font-size: 12px;
+  color:grey;
+}

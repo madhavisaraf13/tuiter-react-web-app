@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Search input styles */
+    .wd-search-container {
+      background-color: lightgray;
+      padding: 10px;
+    }
+    
+    .wd-search-input {
+      background-color: lightgray;
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-size: 16px;
+      color: darkgray;
+      width: 300px;
+      margin-right: 10px;
+    }
+    
+    .wd-search-input:focus {
+      outline: none;
+    }
+    
+    .wd-search-icon {
+      color: darkgray;
+      font-size: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    
+    .wd-gear-icon {
+      color: darkgray;
+      font-size: 20px;
+      vertical-align: middle;
+    }
+    
+    /* Tabs styles */
+    .wd-tabs {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    .wd-tab-item {
+      padding: 10px;
+      margin-right: 10px;
+      position: relative;
+      cursor: pointer;
+      font-size: 25px;
+      color: black;
+    }
+    
+    .wd-tab-item.active {
+      font-weight: bold;
+    }
+    
+    .wd-tab-item.active::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: blue;
+    }
+    
+    /* Image with overlay text styles */
+    .wd-image-container {
+      position: relative;
+    }
+    
+    .wd-image {
+      width: 100%;
+    }
+    
+    .wd-image-overlay {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      padding: 10px;
+      color: white;
+    }
+    
+    /* Tuits list styles */
+    .wd-tuits {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .wd-tuit-item {
+      padding: 10px;
+      border-bottom: 1px solid lightgray;
+    }
+    
+    .wd-tuit-item:last-child {
+      border-bottom: none;
+    }
+    
+    .wd-tuit-content {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wd-search-container">
+    <span class="wd-search-icon">&#128269;</span>
+    <input type="text" class="wd-search-input" placeholder="Search Tuiter">
+    <span class="wd-gear-icon">&#9881;</span>
+  </div>
+  
+  <ul class="wd-tabs">
+    <li class="wd-tab-item active">
+      <span class="wd-tab-label">For You</span>
+    </li>
+    <li class="wd-tab-item">
+      <span class="wd-tab-label">Trending</span>
+    </li>
+    <li class="wd-tab-item">
+      <span class="wd-tab-label">News</span>
+    </li>
+    <li class="wd-tab-item">
+      <span class="wd-tab-label">Sports</span>
+    </li>
+    <li class="wd-tab-item">
+      <span class="wd-tab-label">Entertainment</span>
+    </li>
+  </ul>
+  
+  <div class="wd-image-container">
+    <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2023/05/12/3813386-111551720.jpg?itok=mdU5xTGm" class="wd-image">
+    <div class="wd-image-overlay">
+      <h1>This is the overlay text</h1>
+    </div>
+  </div>
+  
+  <ul class="wd-tuits">
+    <li class="wd-tuit-item">
+      <span class="wd-tuit-username">JohnDoe</span>
+      <div class="wd-tuit-content">This is the content of the first tuit.</div>
+    </li>
+    <li class="wd-tuit-item">
+      <span class="wd-tuit-username">JaneSmith</span>
+      <div class="wd-tuit-content">This is the content of the second tuit.</div>
+    </li>
+    <li class="wd-tuit-item">
+      <span class="wd-tuit-username">BobJohnson</span>
+      <div class="wd-tuit-content">This is the content of the third tuit.</div>
+    </li>
+  </ul>
+</body>
+</html>
