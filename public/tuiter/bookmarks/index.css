@@ -8,9 +8,15 @@
 .wd-tuits {
   list-style-type: none;
   padding: 0;
-  border-width: 1px ;
-  border-style:solid;
-  border-color: lightgray;
+}
+
+.wd-icons-container {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  font-size: 15px;
+  padding:20px;
+  
 }
 
 .wd-tuit-item {
@@ -133,6 +139,5 @@
     border-width:1px;
     border-style:solid;
     border-color:lightgray;
-    border-top-left-radius:15px;
-    border-top-right-radius:15px;
+    border-radius:15px;
   }
