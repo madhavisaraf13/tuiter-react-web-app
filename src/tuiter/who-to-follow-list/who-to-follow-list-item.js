@@ -2,8 +2,8 @@ import React from "react";
 import whoArray from "./who";
 const WhoToFollowListItem = (
  {
-   who = whoArray
-   
+    who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
+
  }
 ) => {
  return(
