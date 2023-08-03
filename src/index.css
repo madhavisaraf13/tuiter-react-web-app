@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.tuitDiv{
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-word;
+  }

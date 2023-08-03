@@ -24,6 +24,7 @@ function Tuiter() {
        </div>
        <div className="col-7 py-2">
          <Routes>
+           <Route path="/" element={<HomeScreen/>} />
            <Route path="/home" element={<HomeScreen/>} />
            <Route path="/explore" element={<ExploreScreen/>} />
            <Route path="/notifications" element={<h1>Notifications</h1>}/>

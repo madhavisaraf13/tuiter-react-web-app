@@ -4,7 +4,7 @@ import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
 import { deleteTuit } from "../reducers/tuits-reducer";
 import {AiOutlineClose} from "react-icons/ai";
-import './index.css';
+import '../../index.css';
 const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
