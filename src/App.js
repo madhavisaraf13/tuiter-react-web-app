@@ -71,7 +71,7 @@ function App() {
     <HashRouter>
       <div className="container">
         <Routes>
-          <Route path="/"         element={<Navigate to="/labs"/>}/>
+          <Route path="/"         element={<Navigate to="/labs/a3"/>}/>
           <Route path="/labs/*"   element={<Labs/>}/>
           <Route path="/hello"    element={<HelloWorld/>}/>
           <Route path="/tuiter/*" element={<Tuiter/>}/>
@@ -81,29 +81,3 @@ function App() {
   );
 }
 export default App;
-
-// import Labs from "./labs";
-// import HelloWorld from "./labs/a3/hello-world";
-// import Tuiter from "./tuiter";
-// import {HashRouter,Link,Navigate} from "react-router-dom";
-// import {Routes, Route} from "react-router";
-
-// function App() {
-//   return (
-//       <div className="container">
-//         <HashRouter>
-//         <Link to="/labs/a3">A3</Link> |
-//         <Link to="/labs/a3/hello-world">Hello World</Link>|
-//         <Link to="/tuiter">Tuiter</Link>
-//         <Routes>
-//           <Route path="/" element={<Navigate to="labs"/>}/>
-//           <Route path="labs/" element={<Labs/>}/>
-//           <Route path="hello/" element={<HelloWorld/>}/>
-//           <Route path="tuiter/" element={<Tuiter/>}/>
-//         </Routes>
-//         </HashRouter>
-//       </div>
-    
-//   );
-// }
-// export default App;
