@@ -4,18 +4,12 @@ import {FaRegThumbsUp,FaRegThumbsDown} from "react-icons/fa";
 import {BsArrowRepeat} from "react-icons/bs";
 import {BiChat} from "react-icons/bi";
 import {AiOutlineShareAlt} from "react-icons/ai"; 
-import { likeTuit,dislikeTuit } from "../reducers/tuits-reducer";
+//import { likeTuit,dislikeTuit } from "../reducers/tuits-reducer";
 import {useDispatch} from "react-redux";
+import { updateTuitThunk } from "../services/tuits-thunks";
 
 function TuitStats({ tuit }) {
     const dispatch = useDispatch();
-
-    const likeTuitHandler = (id) => {
-    dispatch(likeTuit(id));
-    }
-    const dislikeTuitHandler = (id) => {
-        dispatch(dislikeTuit(id));
-    }
     return (
       <div className="row">
         <div className="col">
@@ -27,21 +21,18 @@ function TuitStats({ tuit }) {
         <div className="col">
             {tuit.liked ? (
                 <>
-                {tuit.likes} <FaHeart style={{color: 'red', fontSize: '20px'}} />
+                {tuit.likes}<FaHeart style={{color: 'red', fontSize: '20px'}} className="text-danger" onClick={() => dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1,liked:true }))}/>
                 </>
             ):(<>
-                {tuit.likes} <FaHeart style={{fontSize: '20px'}} />
+                {tuit.likes} <FaHeart style={{color: 'black', fontSize: '20px'}} className="text-danger" onClick={() => dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))}/>
                 </>)
         }
         </div>
         <div className="col">
+        {tuit.dislikes}<FaRegThumbsDown style={{fontSize: '20px'}} onClick={() => dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1}))}/>
+        </div>
+        <div className="col">
           <AiOutlineShareAlt style={{fontSize: '20px'}}/>
-        </div>
-        <div className="col">
-          <FaRegThumbsUp style={{fontSize: '20px'}} onClick={() => likeTuitHandler(tuit._id)} />
-        </div>
-        <div className="col">
-          <FaRegThumbsDown style={{fontSize: '20px'}} onClick={() => dislikeTuitHandler(tuit._id)}/>
         </div>
       </div>
     );

@@ -8,6 +8,7 @@ import { BiBold } from 'react-icons/bi';
 import { BiItalic } from 'react-icons/bi';
 import {createTuit} from "../reducers/tuits-reducer";
 import {useDispatch} from "react-redux";
+import {createTuitThunk} from "../services/tuits-thunks";
 
 const WhatsHappening = () => {
  let [whatsHappening, setWhatsHappening] = useState('');
@@ -16,9 +17,10 @@ const WhatsHappening = () => {
   const newTuit = {
      tuit: whatsHappening
    }
-   dispatch(createTuit(newTuit));
+   dispatch(createTuitThunk(newTuit));
    setWhatsHappening("");
  }
+ 
 
  return (
    <div className="row">

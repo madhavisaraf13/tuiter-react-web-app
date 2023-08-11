@@ -2,13 +2,13 @@ import React from "react";
 import { FcApproval } from "react-icons/fc";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import {AiOutlineClose} from "react-icons/ai";
 import '../../index.css';
 const TuitItem = ({tuit}) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
 }
 
  return(
